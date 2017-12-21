@@ -1,0 +1,26 @@
+apply plugin: 'java'
+//apply plugin: 'eclipse'
+archivesBaseName = 'test4'
+version = '1.0-SNAPSHOT'
+repositories {
+	mavenCentral()
+}
+jar {
+	manifest {
+		attributes 'Main-Class': 'AppMain'
+	}
+}
+dependencies {
+	compile 'org.springframework:spring-core:4.0.6.RELEASE'
+	compile 'org.springframework:spring-context:4.0.6.RELEASE'
+	compile 'org.springframework:spring-tx:4.0.6.RELEASE'
+	compile 'org.springframework:spring-orm:4.0.6.RELEASE'
+	compile 'org.hibernate:hibernate-core:4.3.6.Final'
+//	compile 'mysql:mysql-connector-java:5.1.31'
+//	compile 'joda-time:joda-time:2.3'
+//	compile 'org.jadira.usertype:usertype.core:3.0.0.CR1'
+	compile 'org.postgresql:postgresql:9.2-1003-jdbc4'
+	compile 'com.google.guava:guava:19.0'
+
+}
+
