@@ -24,7 +24,7 @@ public class DaoImpl extends AbstractDao{
 
     @SuppressWarnings("unchecked")
     public List<DomainEntity> findAll(Class classs) {
-        Criteria criteria = getSession().createCriteria(classs);
+        Criteria criteria = getSession().createCriteria(classs);//
         return (List<DomainEntity>) criteria.list();
     }
 
